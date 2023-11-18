@@ -1,0 +1,72 @@
+a/* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+.mdc-button {
+  margin: 5px !important;
+}
+.mat-mdc-form-field {
+  width: 100%;
+}
+.content {
+  display: block !important;
+}
+/* You can add global styles to this file, and also import other style files */
+
+.toolbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #454545;
+  padding: 1em 0em;
+  color: white;
+}
+.toolbar a {
+  text-decoration: none;
+  color: white;
+}
+.logout {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 24px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+.w3-bar,
+h1,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+.fa-anchor,
+.fa-coffee {
+  font-size: 200px;
+}
+.w3-bar.w3-red.w3-card.w3-left-align.w3-large {
+  background-color: rgb(55 136 200) !important;
+}
+header.w3-container.w3-red.w3-center {
+  background-color: rgb(55 136 200) !important;
+}
+.fa-solid,
+.fas {
+  font-weight: 900;
+  font-size: 15em;
+  color: rgb(55 136 200) !important;
+}
+.listing {
+  color: black !important;
+}

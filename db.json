@@ -1,0 +1,72 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "name": "Admin",
+      "password": "Test@1234",
+      "email": "test@gmail.com",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "fares",
+      "name": "designer",
+      "password": "Test@1234",
+      "email": "fares@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "admin",
+      "name": "Admin"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": false
+    }
+  ],
+  "customFile": []
+}

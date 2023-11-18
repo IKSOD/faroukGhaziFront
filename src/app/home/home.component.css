@@ -1,0 +1,36 @@
+/* body{
+    height: 100vh;
+    background-image: linear-gradient(to right top, #1cb6da, #81c5ec, #b9d5f5, #e3e8fa, #ffffff);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+margin: 0em 2em 0em 2em;
+padding-top: 0.5em;
+
+font-size: 2em;
+ 
+}
+.logo img{
+    height: auto;
+    width: 5em;
+}
+.nav_items{
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+
+}
+button{
+    border: unset;
+    background-color: unset;
+    font-weight: bold;
+}
+.logout button{
+    color: rgb(0, 174, 255);
+    border-radius: 2em;
+    background-color: rgb(228, 243, 255);
+    border: solid 0.1em rgb(153, 211, 255);
+    padding: 1em 3em;
+} */

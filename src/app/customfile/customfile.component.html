@@ -1,0 +1,51 @@
+<!-- <div style="text-align: center; margin: 2%;">
+    <h1 > Custom File Handler</h1>
+    <input type="file" (change)="select($event)" >
+    
+</div>
+<div style="text-align: center; margin: 2%;">
+    <button *ngIf="currentSelectedFile" (click)="upload()" class="button"> Upload</button>
+</div>
+<input [(ngModel)]="ghazi" type="text" name="" id="">
+<button (click)="getFile()">button</button>
+<img *ngIf="pictureUrl" [src]="pictureUrl" alt=""> -->
+
+
+<!-- customfile.component.html -->
+
+<div style="text-align: center; margin: 2%;">
+    <h1>Custom File Handler</h1>
+    <input type="file" (change)="select($event)">
+</div>
+
+<div style="text-align: center; margin: 2%;">
+    <button *ngIf="currentSelectedFile" (click)="upload()" class="button">Upload</button>
+</div>
+
+<input [(ngModel)]="ghazi" type="text" name="" id="">
+<button (click)="getFile()">Get File</button>
+
+<div style="text-align: center; margin: 2%;">
+    <img *ngIf="pictureUrl" [src]="pictureUrl" alt="Uploaded Image">
+</div>
+
+<div>
+    <h2>Uploaded Files</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>File Name</th>
+                <th>File Size (bytes)</th>
+                <th>Preview</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Loop through uploaded files and display them in the table -->
+            <tr *ngFor="let file of uploadedFiles">
+                <td>{{ file.name }}</td>
+                <td>{{ file.size }}</td>
+                <td><img [src]="file.url" alt="{{ file.name }}" width="100" height="100"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

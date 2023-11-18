@@ -1,0 +1,47 @@
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<form [formGroup]="courrierForm" (submit)="saveCourrier()">
+  <div class="form-group" >
+    <label >num inscri</label>
+    <input type="text" class="form-control"  formControlName="numInscri" >
+  </div>
+  <div class="form-group">
+    <label >subject</label>
+    <input type="text" class="form-control"  formControlName="subject" >
+  </div>
+  <div class="form-group">
+    <label >expéditeur</label>
+    <input type="text" class="form-control"  formControlName="expediteur" >
+  </div>
+  
+  <div class="form-group">
+    <label >remarque</label>
+    <input type="text" class="form-control"  formControlName="remarque" >
+  </div>
+
+  <div class="form-group">
+    <label >destinataire</label>
+    <input type="text" class="form-control"  formControlName="destinataire" >
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Add Courrier</button>
+</form>
+  <div class="container">
+                       <table class="table table-stripped">
+                    <tr>
+                      <td>Num inscri</td>
+                      <td>subject</td>
+                      <td>expéditeur</td>
+                      <td>RECIPIENT</td>
+                      <td>remarque</td>
+                    </tr>
+                  <tr *ngFor="let courrier of courrierList">
+                  <td>{{courrier?.remarque}}</td>
+                  <td>{{courrier?.subject}}</td>
+                  <td>{{courrier?.numInscri}}</td>
+                  <td>{{courrier?.expediteur}}</td>
+                  <td>{{courrier?.destinataire}}</td>
+                </tr>
+                  </table>
+    </div>
+
